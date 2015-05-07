@@ -11,9 +11,12 @@ First, in the very unlikely chance you don't have it, you should install node.js
 * Download from [https://nodejs.org/download/](https://nodejs.org/download/)
 
 To add the definition files for the libraries you are using we need [tsd](https://www.npmjs.com/package/tsd)
-		npm install tsd -g
+	npm install tsd -g
 
 There are a few subtle trick to using tsd which will make it easier get intellisense with VS Code.
 When the type definitions are downloaded they should go in the `typings` folder.
 The key thing in this folder is that if there is a file present called `tsd.d.ts` this can contain all the references to any other `.d.ts` files and VS Code will automatically use them to provide intellisense in any javascript file.
+To get intellisense for `express` run
+	tsd query express install -ios
+This will download and install the `express.td.s` and add `/// <reference path="express/express.d.ts" />` to the `tsd.d.ts` file.
 
