@@ -1,5 +1,5 @@
 my-element.html
-<link rel="import" href="../bower_components/polymer/polymer.html">
+	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element">
 	  <template>
 		<content></content>
@@ -28,7 +28,7 @@ my-element.html
 	</script>
 
 my-element2.html
-<link rel="import" href="../bower_components/polymer/polymer.html">
+	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element2">
 	  <template>
 	    <span><span>{{something.hello}}</span> from <span>{{something.world}}</span> <b>my-element2</b>. This is my Shadow DOM</span>
@@ -50,7 +50,7 @@ my-element2.html
 	</script>
 
 my-element3.html
-<link rel="import" href="../bower_components/polymer/polymer.html">
+	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element3">
 	  <template>
 		<span>{{mycustomattr}}</span>
@@ -75,8 +75,8 @@ my-element3.html
 	</script>
 
 index.html
-<!DOCTYPE html>
-  <html ng-app>
+	<!DOCTYPE html>
+	<html ng-app>
     <head>
       <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
       <link rel="import" href="elements/my-element.html">
