@@ -1,4 +1,5 @@
 my-element.html
+
 	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element">
 	  <template>
@@ -28,6 +29,7 @@ my-element.html
 	</script>
 
 my-element2.html
+
 	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element2">
 	  <template>
@@ -50,6 +52,7 @@ my-element2.html
 	</script>
 
 my-element3.html
+
 	<link rel="import" href="../bower_components/polymer/polymer.html">
 	<dom-module id="my-element3">
 	  <template>
@@ -75,6 +78,7 @@ my-element3.html
 	</script>
 
 index.html
+
 	<!DOCTYPE html>
 	<html ng-app>
     <head>
