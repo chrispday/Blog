@@ -81,34 +81,33 @@ index.html
 
 	<!DOCTYPE html>
 	<html ng-app>
-    <head>
-      <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-      <link rel="import" href="elements/my-element.html">
-      <link rel="import" href="elements/my-element2.html">
-      <link rel="import" href="elements/my-element3.html">
-        <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    </head>
-    <body>
-  	<input type="text" ng-model="yourName" placeholder="Enter a name here"><hr/>
-      <my-element>
-  	{{yourName}}
-  	<p>some content</p>
-  	<p><my-element2 something='{ "hello": "newhello", "world": "newworld" }' /></p>
-  </my-element>
-  <my-element3 mycustomattr="{{yourName}}"></my-element3>
-  <input id="clickme" type="button" value="Click Me"></input>
-    <div style="display:flex;width:800px;margin:0 auto;">
-      <div style="flex-grow:1;background-color:red;">One<br/>One</div>
-      <div style="flex-grow:2;background-color:green;">Two</div>
-      <div style="flex-grow:1;background-color:blue;">Three</div>
-    </div>
-  <script>
-  /// <reference path="typings/tsd.d.ts"/>
-    $("#clickme").click(function() {
-      $("my-element2")[0].something = { "hello": "proghello", "world": "progworld" };
-    });
-  </script>
-    </body>
-  </html>
-
+	    <head>
+			<script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+			<link rel="import" href="elements/my-element.html">
+			<link rel="import" href="elements/my-element2.html">
+			<link rel="import" href="elements/my-element3.html">
+			<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	    </head>
+	    <body>
+			<input type="text" ng-model="yourName" placeholder="Enter a name here"><hr/>
+			<my-element>
+				{{yourName}}
+				<p>some content</p>
+				<p><my-element2 something='{ "hello": "newhello", "world": "newworld" }' /></p>
+			</my-element>
+			<my-element3 mycustomattr="{{yourName}}"></my-element3>
+			<input id="clickme" type="button" value="Click Me"></input>
+			<div style="display:flex;width:800px;margin:0 auto;">
+				<div style="flex-grow:1;background-color:red;">One<br/>One</div>
+				<div style="flex-grow:2;background-color:green;">Two</div>
+				<div style="flex-grow:1;background-color:blue;">Three</div>
+			</div>
+			<script>
+				/// <reference path="typings/tsd.d.ts"/>
+				$("#clickme").click(function() {
+					$("my-element2")[0].something = { "hello": "proghello", "world": "progworld" };
+				});
+			</script>
+		</body>
+	</html>
